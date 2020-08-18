@@ -3,4 +3,4 @@
 #ENV BAR1=Microservice2.bar
 
 # Copy in the bar file 
-COPY --chown=aceuser ./acesoe/binary/IVTK.bar /tmp
+COPY --chown=aceuser ./acesoe/binary/ivtk.bar /home/aceuser/bars
