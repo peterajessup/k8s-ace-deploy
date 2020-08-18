@@ -2,3 +2,4 @@
 
 # Copy in the bar file 
 COPY --chown=aceuser ./acesoe/binary /home/aceuser/bars
+RUN ace_compile_bars.sh
