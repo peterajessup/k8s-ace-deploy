@@ -3,5 +3,5 @@
 # Copy in the bar file 
 COPY ./acesoe/binary /home/aceuser/initial-config/bars
 # COPY ./acesoe/webusers /home/aceuser/initial-config/webusers
-# RUN ace_compile_bars.sh
+
 RUN ace_compile_bars.sh
