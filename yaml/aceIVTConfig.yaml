@@ -1,0 +1,18 @@
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+  name: acedemo 
+spec:
+  source:
+    git:
+      uri: https://github.com/peterajessup/ibm-ace-ivt-build
+      ref: master
+  output:
+    to:
+      kind: ImageStreamTag
+      name: 'demoace:v3'
+  strategy:
+    dockerStrategy:
+      pullSecret:
+        name: ibm-entitlement-key
+      dockerfilePath: .
