@@ -1,1 +1,1 @@
-custom ACE image build adding MicroService BAR to standard operating environment image
+A Custom ACE image build adding the Installation Verification test bar to the Base IBM-supplied ACE image
