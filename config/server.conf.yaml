@@ -1,0 +1,10 @@
+ResourceManagers: 
+  HTTPSConnector:
+    #ListenerPort: 0                 # Set non-zero to set a specific port, defaults to 7843
+    #ListenerAddress: '0.0.0.0'      # Set the IP address for the listener to listen on. Default is to listen on all addresses
+    #ReqClientAuth: true
+    #KeyAlias: ''
+    #KeyPassword: 'P4s5w0rd'         # Set the password or alias to the password of the key
+    KeystoreFile: '/home/aceuser/keystores/key.jks'
+    KeystorePassword: 'password'    # Set the password or alias to the password of the keystore
+    KeystoreType: 'JKS'             # Set the keystore type, can be 'JKS' or 'P12'. Default is JKS.
