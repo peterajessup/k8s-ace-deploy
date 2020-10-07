@@ -1,8 +1,7 @@
-rm oc.dat
 crtype=$1
 crname=$2
 crfile=$3
-echo "apiVersion: appconnect.ibm.com/v1beta1" >> oc.dat
+echo "apiVersion: appconnect.ibm.com/v1beta1" > oc.dat
 echo "kind: Configuration" >> oc.dat
 echo "metadata:" >> oc.dat
 echo "  name: ${crname}" >> oc.dat
