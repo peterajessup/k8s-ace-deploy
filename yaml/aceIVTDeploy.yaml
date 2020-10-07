@@ -1,0 +1,24 @@
+apiVersion: appconnect.ibm.com/v1beta1
+kind: IntegrationServer
+metadata:
+  name: is2
+  namespace: ace
+spec:
+  pod:
+    containers:
+      runtime:
+        image: image-registry.openshift-image-registry.svc:5000/ace/demoace:v3
+  version: 11.0.0.10-r1
+  imagePullSecrets:
+    name: default-dockercfg-9t57d
+  license:
+    accept: true
+    license: L-APEH-BRZL7U
+    use: AppConnectEnterpriseNonProduction
+  useCommonServices: true
+  replicas: 1
+  service:
+    endpointType: https
+  designerFlowsOperationMode: disabled
+  logFormat: basic
+  configurations: ["key.jks", "kafkapolicy", "httpsconf", "scramparms", "es-cert-ace.p12"]
