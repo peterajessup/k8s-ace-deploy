@@ -1,4 +1,3 @@
-set tw=0
 crtype=$1
 crname=$2
 crfile=$3
