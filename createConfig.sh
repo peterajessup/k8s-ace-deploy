@@ -8,6 +8,6 @@ echo "  name: ${crname}" >> oc.dat
 echo "spec:" >> oc.dat
 (echo -n "  contents: "; base64 ${crfile}) >> oc.dat
 echo "  type: ${crtype}" >> oc.dat
-echo "---" >> oc.dat 
+# echo "---" >> oc.dat 
 oc apply -f ./oc.dat
 
