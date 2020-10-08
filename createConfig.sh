@@ -1,3 +1,4 @@
+set tw=0; export $tw
 crtype=$1
 crname=$2
 crfile=$3
