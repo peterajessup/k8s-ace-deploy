@@ -1,1 +1,2 @@
-A Custom ACE image build adding the Installation Verification test bar to the Base IBM-supplied ACE image
+This repository provides the artifacts required for deployment of an IVT ACE flow into an Openshift cluster.
+
