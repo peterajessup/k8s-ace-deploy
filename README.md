@@ -2,7 +2,7 @@
 
 This repository is to be used for creating an ACE Integration Server on OCP, version 4.4.x, with IBM's Cloudpak for Integration Installed (verison 2020.2.1 or higher).
 
-The artifacts include a BuildConfig, an Integrtation Server Custom resource definition, a Dockerfile for the image build, configuration objects whichh allow it to connect via the supplied message flow into EventStreams and MQ.
+The artifacts include a BuildConfig, an Integration Server Custom resource definition, a Dockerfile for the image build, configuration objects which allow the server to connect via the supplied message flow into EventStreams and MQ.
 
 There are two policy projects which are delivered by the supplied scripts into the overrides directory so it is possible to modify the supplied zip projects to suit your own environment for an MQ Queue Manager and an Event Streams Cluster.
 
