@@ -10,7 +10,7 @@ There are some hard dependancies on the external components, such as an MQ queue
 
 For details of how the queue manager is configured see the github repo https://github.com/peterajessup/ibm-mq-custom-ivt
 
-The configuration assumes an ImageStream object named demoace exists on the cluster, in the ace namespace, and the docker secret for the image repository of the cluster is also specific to the cluster used for deployment of the Integration Server (hint: modify the aceIVTDeploy.yaml).
+The configuration assumes an ImageStream object named demoace exists on the cluster, in the ace namespace, and the docker secret for the image repository of the cluster is also specific to the cluster used for deployment of the Integration Server (hint: modify the aceIVTDeploy.yaml to add your own docker image pull secret).
 
 Note that the es-cert-ace-.p12 file will need to be replaced with the one supplied by the Event Streams instance to which you wish to connect. Make sure the name of the p12 cert matches the name of the configuration object you creste.
 
