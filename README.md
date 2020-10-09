@@ -10,7 +10,7 @@ There are some hard dependancies on the external components, such as a queue cal
 
 For details of how the queue manager is configured see the github repo https://github.com/peterajessup/ibm-mq-custom-ivt
 
-The configuration assumes an ImageStream object named demoace exists on the cluster, in the ace namespace, and the docker secret for the image repository of the cluster is also specific to the cluster used for deployment.
+The configuration assumes an ImageStream object named demoace exists on the cluster, in the ace namespace, and the docker secret for the image repository of the cluster is also specific to the cluster used for deployment of the Integration Server (hint: modify the aceIVTDeploy.yaml).
 
 A sample script for the full deployment is as follows:
 Note the script is written to ignore deletion errors of objects on the target cluster in case they don't exist. This permits 
