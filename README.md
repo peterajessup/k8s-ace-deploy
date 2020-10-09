@@ -14,7 +14,7 @@ The configuration assumes an ImageStream object named demoace exists on the clus
 
 A sample script for the full deployment is as follows:
 Note the script is written to ignore deletion errors of objects on the target cluster in case they don't exist. This permits 
-a build script in Jenkins to be based on this supplied script.
+a build script in, say Jenkins, to be based on this supplied script.
 ```
 
 set +e
