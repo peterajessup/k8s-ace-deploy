@@ -12,9 +12,9 @@ For details of how the queue manager is configured see the github repo https://g
 
 Note that the es-cert-ace-.p12 file will need to be replaced with the one supplied by the Event Streams instance to which you wish to connect. Make sure the name of the p12 cert matches the name of the configuration object you create.
 Also note the eventstreampolicyproject zip will need to be uncompressed, and the eventstreamspolicy.policyxml modified to refelct your Event Streams cluster's bootsrapserver address, and the name of the certificate from the event Streams instance (usually es-cert.p12). You will then re-compress this file and update the git repo.
-The setdbparms truststore entry file will also need to be modified with the password for this same cert file.
+The setdbparms truststore entry file will also need to be modified with the password for this same cert file, and the kafka::myKafkaId entry changed to reflect the scram unsername and password.
 
-To retrieve the configuratin paramters from your event Streams instance:
+To retrieve the configuration paramters from your event Streams instance and configure it ready for the ace flow:
 
 •	Navigate to the Event Streams instance home page
 •	Click on the Create a topic page and enter the topic name ivt1
