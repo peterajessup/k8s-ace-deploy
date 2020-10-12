@@ -40,6 +40,7 @@ Note the script is written to ignore deletion errors of objects on the target cl
 a build script in, say Jenkins, to be based on this supplied script.
 ```
 
+oc project ace
 set +e
 oc delete BuildConfig aceivt
 set -e
