@@ -10,7 +10,7 @@ spec:
         image: image-registry.openshift-image-registry.svc:5000/ace/demoace:v0.91
   version: 11.0.0.10-r1
   imagePullSecrets:
-    name: default-dockercfg-9t57d
+    name: default-dockercfg-4x5lk
   imagePullPolicy: Always
   license:
     accept: true
