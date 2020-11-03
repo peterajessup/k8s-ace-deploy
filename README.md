@@ -20,8 +20,11 @@ To retrieve the configuration paramters from your event Streams instance and con
 
 •	Navigate to the Event Streams instance home page
 •	Click on the Create a topic page and enter the topic name ivt1
+
 •	Click on Next 3 times and then Create topic to finalise the configuration
+
 •	Click on the Home button  , then on the Connect to this Cluster tile
+
 •	Copy the External connection string and save away  
 
 •	Click on the Generate Scram credentials, give the credentials a name and click Next 4 times. Save the Scram username and password away.
