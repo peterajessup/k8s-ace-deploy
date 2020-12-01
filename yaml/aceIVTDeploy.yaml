@@ -14,8 +14,8 @@ spec:
   imagePullPolicy: Always
   license:
     accept: true
-    license: L-APEH-BRZL7U
-    use: AppConnectEnterpriseNonProduction
+    license: L-APEH-BPUCJK
+    use: AppConnectEnterpriseProduction
   useCommonServices: true
   replicas: 1
   service:
