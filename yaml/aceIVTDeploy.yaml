@@ -8,9 +8,9 @@ spec:
     containers:
       runtime:
         image: image-registry.openshift-image-registry.svc:5000/ace/demoace:v0.94
-  version: 11.0.0.10-r1
+  version: 11.0.0.11-r1
   imagePullSecrets:
-    name: default-dockercfg-4x5lk
+    name: default-dockercfg-zn29f
   imagePullPolicy: Always
   license:
     accept: true
