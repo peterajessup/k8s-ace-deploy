@@ -6,7 +6,7 @@ The artifacts include a BuildConfig, an Integration Server Custom resource defin
 
 There are two policy projects which are delivered by the supplied scripts into the overrides directory so it is possible to modify the policy zip projects to suit your own environment for an MQ Queue Manager and an Event Streams cluster.
 
-There are some hard dependancies on the external components, such as an MQ queue called IVT.Q running in an mq deployemnt called 'mq1', and a Event Streams topic called ivt1. 
+There are some hard dependancies on the external components, such as an MQ queue called IVT.Q and IVT.R running in an mq deployemnt called 'mq1', and a Event Streams topic called ivt1. 
 
 For details of how the queue manager is configured see the github repo https://github.com/peterajessup/ibm-mq-custom-ivt
 
