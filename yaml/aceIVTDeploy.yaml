@@ -23,7 +23,7 @@ spec:
     endpointType: https
   designerFlowsOperationMode: disabled
   tracing:
-    enabled: false
-    namespace: od
+    enabled: true
+    namespace: tracing
   logFormat: basic
   configurations: ["mqpolicy", "key.jks", "kafkapolicy", "httpsconf", "scramparms", "es-cert-ace.p12"]
