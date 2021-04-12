@@ -11,7 +11,7 @@ spec:
         imagePullPolicy: Always
   version: 11.0.0.11-r1
   imagePullSecrets:
-    name: default-dockercfg-zn29f
+    name: default-dockercfg-qp7wz
   
   license:
     accept: true
@@ -23,7 +23,7 @@ spec:
     endpointType: https
   designerFlowsOperationMode: disabled
   tracing:
-    enabled: true
+    enabled: false
     namespace: tracing
   logFormat: basic
   configurations: ["mqpolicy", "key.jks", "kafkapolicy", "httpsconf", "scramparms", "es-cert-ace.p12"]
