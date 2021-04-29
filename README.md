@@ -6,13 +6,13 @@ The artifacts include a BuildConfig, an Integration Server Custom resource defin
 
 There are two policy projects which are delivered by the supplied scripts into the overrides directory so it is possible to modify the policy zip projects to suit your own environment for an MQ Queue Manager and an Event Streams cluster.
 
-There are some hard dependancies on the external components, such as an MQ queue called IVT.Q and IVT.R running in an mq deployemnt called 'mq1', and a Event Streams topic called ivt1. 
+There are some hard dependancies on the external components, such as an MQ queue called IVT.Q and IVT.R running in an mq deployemnt called 'mq1', and a Kafka topic called ivt1. 
 
 For details of how the queue manager is configured see the github repo https://github.com/peterajessup/ibm-mq-custom-ivt
 
-Note that the es-cert-ace-.p12 file will need to be replaced with the one supplied by the Event Streams instance to which you wish to connect. Make sure the name of the p12 cert matches the name of the configuration object you create.
+Note that the es-cert-ace-.p12 file will need to be replaced with the one supplied by the Kafka instance to which you wish to connect. Make sure the name of the p12 cert matches the name of the configuration object you create.
 
-Also note the eventstreampolicyproject zip will need to be uncompressed, and the eventstreamspolicy.policyxml modified to reflect your Event Streams cluster's bootstrapserver address, and the name of the certificate from the event Streams instance (usually es-cert.p12). You will then re-compress this file and update the git repo.
+Also note the eventstreampolicyproject zip will need to be uncompressed, and the eventstreamspolicy.policyxml modified to reflect your Kafka cluster's bootstrapserver address, and the name of the certificate from the event Streams instance (usually es-cert.p12). You will then re-compress this file and update the git repo.
 
 The setdbparms truststore entry file will also need to be modified with the password for this same cert file, and the kafka::myKafkaId entry changed to reflect the scram unsername and password.
 
