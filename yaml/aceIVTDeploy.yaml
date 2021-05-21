@@ -9,12 +9,6 @@ spec:
       runtime:
         image: image-registry.openshift-image-registry.svc:5000/ace/demoace:v0.94
         imagePullPolicy: Always
-  version: 11.0.0.11-r1
-  imagePullSecrets:
-    name: default-dockercfg-qp7wz
-  pod:
-    containers:
-      runtime:
         resources:
           limits:
             cpu: 4
@@ -22,6 +16,9 @@ spec:
           requests:
             cpu: 1
             memory: 300Mi
+  version: 11.0.0.11-r1
+  imagePullSecrets:
+    name: default-dockercfg-qp7wz 
   license:
     accept: true
     license: L-APEH-BSVCHU
