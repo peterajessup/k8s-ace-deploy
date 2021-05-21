@@ -12,7 +12,16 @@ spec:
   version: 11.0.0.11-r1
   imagePullSecrets:
     name: default-dockercfg-qp7wz
-  
+  pod:
+    containers:
+      runtime:
+        resources:
+          limits:
+            cpu: 4
+            memory: 2Gi
+          requests:
+            cpu: 1
+            memory: 300Mi
   license:
     accept: true
     license: L-APEH-BSVCHU
