@@ -11,7 +11,7 @@ spec:
         imagePullPolicy: Always
         resources:
           limits:
-            cpu: 4
+            cpu: 1
             memory: 2Gi
           requests:
             cpu: 1
@@ -24,7 +24,7 @@ spec:
     license: L-APEH-BSVCHU
     use: AppConnectEnterpriseProduction
   useCommonServices: true
-  replicas: 1
+  replicas: 2
   service:
     endpointType: https
   designerFlowsOperationMode: disabled
