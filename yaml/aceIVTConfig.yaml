@@ -10,7 +10,7 @@ spec:
   output:
     to:
       kind: ImageStreamTag
-      name: 'demoace:v0.94'
+      name: 'demoace:v0.95'
   strategy:
     dockerStrategy:
       pullSecret:
