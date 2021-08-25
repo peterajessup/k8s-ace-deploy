@@ -1,0 +1,3 @@
+kafka::myKafkaId user password 
+truststore::truststorePass anyname iQoUGefdBw3o 
+keystore::keystorePass anyname password
