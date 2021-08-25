@@ -18,7 +18,7 @@ spec:
             memory: 300Mi
   version: 11.0.0.11-r1
   imagePullSecrets:
-    name: default-dockercfg-qp7wz 
+    name: default-dockercfg-kxh2x
   license:
     accept: true
     license: L-APEH-BSVCHU
@@ -29,7 +29,7 @@ spec:
     endpointType: https
   designerFlowsOperationMode: disabled
   tracing:
-    enabled: true
+    enabled: false
     namespace: od
   logFormat: basic
   configurations: ["mqpolicy", "key.jks", "kafkapolicy", "httpsconf", "scramparms", "es-cert-ace.p12"]
