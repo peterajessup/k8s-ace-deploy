@@ -1,4 +1,4 @@
-﻿FROM cp.icr.io/cp/appc/ace-server-prod@sha256:8598eef24c097e467bfa33499e62fe0dcfbfd817d877bd2347c857870b47b8fa
+﻿FROM cp.icr.io/cp/appc/ace-server-prod@sha256:eed0750a788047982b3f7ddcf6f6762d46e6c54aca3098dff8ddd25197bcebbc
 
 # Copy in the bar file 
 COPY ./ace/binary /home/aceuser/initial-config/bars
