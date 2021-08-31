@@ -24,7 +24,7 @@ spec:
     license: L-KSBM-C37J2R
     use: AppConnectEnterpriseProduction
   useCommonServices: true
-  replicas: 1
+  replicas: 2
   service:
     endpointType: https
   designerFlowsOperationMode: disabled
