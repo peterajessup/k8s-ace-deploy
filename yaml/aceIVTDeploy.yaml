@@ -24,6 +24,7 @@ spec:
     license: L-KSBM-C37J2R
     use: AppConnectEnterpriseProduction
   useCommonServices: true
+  enableMetrics: true
   replicas: 2
   service:
     endpointType: https
