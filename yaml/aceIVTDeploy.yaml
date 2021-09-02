@@ -25,7 +25,7 @@ spec:
     use: AppConnectEnterpriseProduction
   useCommonServices: true
   enableMetrics: true
-  replicas: 2
+  replicas: 1
   service:
     endpointType: https
   designerFlowsOperationMode: disabled
