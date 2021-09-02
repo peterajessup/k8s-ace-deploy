@@ -8,3 +8,4 @@ ResourceManagers:
     KeystoreFile: '/home/aceuser/keystores/key.jks'
     KeystorePassword: 'password'    # Set the password or alias to the password of the keystore
     KeystoreType: 'JKS'             # Set the keystore type, can be 'JKS' or 'P12'. Default is JKS.
+remoteDefaultQueueManager: '{MQPolicy}:DefaultQM'
