@@ -29,6 +29,7 @@ spec:
   service:
     endpointType: https
   designerFlowsOperationMode: disabled
+  adminServerSecure: false
   tracing:
     enabled: false
     namespace: od
