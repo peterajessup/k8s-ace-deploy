@@ -15,7 +15,7 @@ spec:
             memory: 2Gi
           requests:
             cpu: 1
-            memory: 300Mi
+            memory: 1Gi
   version: 12.0.1.0-r3
   imagePullSecrets:
     name: default-dockercfg-kxh2x
