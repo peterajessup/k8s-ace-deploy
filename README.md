@@ -68,11 +68,10 @@ bash -x createConfig.sh policyproject kafkapolicy config/eventstreamspolicyproje
 bash -x createConfig.sh policyproject mqpolicy config/MQPolicy.zip
 
 
-oc start-build aceivt
+oc start-build aceivt --wait
 
- # delete the existing deployment and re-deploy
-set +e
-oc delete IntegrationServer is2
-set -e
+
+
+oc project ace
 oc apply -f yaml/aceIVTDeploy.yaml
 ```
