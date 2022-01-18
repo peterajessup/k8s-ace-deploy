@@ -21,7 +21,7 @@ spec:
     name: default-dockercfg-kjxtv
   license:
     accept: true
-    license: L-KSBM-C37J2R
+    license: L-KSBM-C87FU2
     use: AppConnectEnterpriseProduction
   useCommonServices: true
   enableMetrics: true
