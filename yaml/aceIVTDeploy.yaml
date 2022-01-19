@@ -34,4 +34,4 @@ spec:
     enabled: false
     namespace: od
   logFormat: basic
-  configurations: ["mqpolicy", "key.jks", "kafkapolicy", "httpsconf", "scramparms", "es-cert-ace.p12"]
+  configurations: ["mqpolicy", "key.jks", "kafkapolicy", "httpsconf", "scramparms", "es-cert-ace.jks"]
