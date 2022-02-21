@@ -1,0 +1,77 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: TriggerTemplate
+metadata:
+  name: yalta-dha-trigger-template
+spec:
+  params:
+  - name: git-repo-url
+    description: The git repository url
+  - name: git-revision
+    description: The git revision
+    default: master
+  - name: git-repo-name
+    description: The name of the deployment to be created / patched
+
+  resourcetemplates:
+  - apiVersion: tekton.dev/v1beta1
+    kind: PipelineRun
+    metadata:
+      generateName: build-deploy-$(tt.params.git-repo-name)-
+    spec:
+      serviceAccountName: default
+      pipelineRef:
+        name: clone-deploy
+      params:
+      - name: git-url
+        value: $(tt.params.git-repo-url)
+      - name: git-revision
+        value: $(tt.params.git-revision)
+      workspaces:
+      - name: shared-workspace
+        volumeClaimTemplate:
+          spec:
+            accessModes:
+              - ReadWriteOnce
+            resources:
+              requests:
+                storage: 500Mi
+---
+
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: TriggerBinding
+metadata:
+  name: yalta-dha-trigger-binding
+spec:
+  params:
+  - name: git-repo-url
+    value: $(body.repository.url)
+  - name: git-repo-name
+    value: $(body.repository.name)
+  - name: git-revision
+    value: $(body.head_commit.id)
+---
+
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: EventListener
+metadata:
+  name: vcs-trigger
+spec:
+  serviceAccountName: vcs-trigger
+  triggers:
+    - bindings:
+        - ref: yalta-dha-trigger-binding
+      template:
+        name: yalta-dha-trigger-template
+---
+
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: vcs-trigger
+spec:
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: el-vcs-trigger
+    weight: 100
