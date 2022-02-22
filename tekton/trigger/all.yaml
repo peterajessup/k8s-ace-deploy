@@ -1,7 +1,7 @@
 apiVersion: triggers.tekton.dev/v1alpha1
 kind: TriggerTemplate
 metadata:
-  name: yalta-dha-trigger-template
+  name: ace-trigger-template
 spec:
   params:
   - name: git-repo-url
@@ -40,7 +40,7 @@ spec:
 apiVersion: triggers.tekton.dev/v1alpha1
 kind: TriggerBinding
 metadata:
-  name: yalta-dha-trigger-binding
+  name: ace-trigger-binding
 spec:
   params:
   - name: git-repo-url
@@ -59,9 +59,9 @@ spec:
   serviceAccountName: vcs-trigger
   triggers:
     - bindings:
-        - ref: yalta-dha-trigger-binding
+        - ref: ace-trigger-binding
       template:
-        name: yalta-dha-trigger-template
+        name: ace-trigger-template
 ---
 
 apiVersion: route.openshift.io/v1
