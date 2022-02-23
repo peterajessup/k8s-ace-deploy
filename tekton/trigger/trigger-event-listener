@@ -6,6 +6,6 @@ spec:
   serviceAccountName: vcs-trigger
   triggers:
     - bindings:
-        - ref: yalta-dha-trigger-binding
+        - ref: ace-trigger-binding
       template:
-        name: yalta-dha-trigger-template
+        name: ace-trigger-template
