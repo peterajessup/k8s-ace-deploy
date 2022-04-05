@@ -14,8 +14,8 @@ spec:
             cpu: '1'
             memory: 2Gi
           requests:
-            cpu: '1'
-            memory: 1Gi
+            cpu: '0.5'
+            memory: 2Gi
   version: 12.0.2.0-r2
   imagePullSecrets:
     name: default-dockercfg-kjxtv
