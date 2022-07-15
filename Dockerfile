@@ -4,4 +4,4 @@ FROM cp.icr.io/cp/appc/ace@sha256:f8f1baa76be21adfeefef8dcf56f432bad7840efdbe147
 COPY ./ace/binary /home/aceuser/initial-config/bars
 # COPY ./ace/webusers /home/aceuser/initial-config/webusers
 
-RUN ace_compile_bars.sh
+# RUN ace_compile_bars.sh
