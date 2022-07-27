@@ -16,7 +16,7 @@ spec:
           requests:
             cpu: '0.5'
             memory: 2Gi
-  version: 12.0.2.0-r2
+  version: 12.0.5.0-r1
   imagePullSecrets:
     name: default-dockercfg-kjxtv
   license:
