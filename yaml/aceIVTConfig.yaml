@@ -11,7 +11,7 @@ spec:
     to:
       kind: ImageStreamTag
 #      name: 'demoace:v0.96'
-       name: 'iagace:v0.96'
+      name: 'iagace:v1.00'
   strategy:
     dockerStrategy:
       pullSecret:
