@@ -16,12 +16,12 @@ spec:
           requests:
             cpu: '0.5'
             memory: 2Gi
-  version: 12.0.5.0-r1
+  version: 12.0.4.0-r2
   imagePullSecrets:
     name: default-dockercfg-kjxtv
   license:
     accept: true
-    license: L-KSBM-C87FU2
+    license: L-APEH-C9NCK6
     use: AppConnectEnterpriseProduction
   useCommonServices: true
   enableMetrics: true
