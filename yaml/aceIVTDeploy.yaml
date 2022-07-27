@@ -21,8 +21,8 @@ spec:
     name: default-dockercfg-kjxtv
   license:
     accept: true
-    license: L-APEH-C9NCK6
-    use: AppConnectEnterpriseProduction
+    license: L-APEH-C9NCDM
+    use: AppConnectEnterpriseNonProduction
   useCommonServices: true
   enableMetrics: true
   replicas: 1
