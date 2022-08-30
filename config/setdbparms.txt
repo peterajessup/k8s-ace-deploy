@@ -1,3 +1,3 @@
-kafka::myKafkaId scram1 BbrFj27SssQf
+kafka::myKafkaId scram1 sTu7cslbFHaX
 truststore::truststorePass anyname password
 keystore::keystorePass anyname password
