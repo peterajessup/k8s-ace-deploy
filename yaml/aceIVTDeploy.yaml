@@ -31,7 +31,7 @@ spec:
   designerFlowsOperationMode: disabled
   adminServerSecure: false
   tracing:
-    enabled: true
+    enabled: false
     namespace: od
   logFormat: basic
   configurations: ["mqpolicy", "key.jks", "kafkapolicy", "httpsconf", "scramparms", "es-cert-ace.jks"]
