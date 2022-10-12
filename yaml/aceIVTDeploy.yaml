@@ -16,7 +16,7 @@ spec:
           requests:
             cpu: '0.5'
             memory: 2Gi
-  version: 12.0.4.0-r2
+  version: 12.0.5.0-r2
   imagePullSecrets:
     name: default-dockercfg-kjxtv
   license:
@@ -25,13 +25,14 @@ spec:
     use: AppConnectEnterpriseNonProduction
   useCommonServices: true
   enableMetrics: true
+  barURL: https://db-ace-dash-dash:3443/v1/directories/ivtnk?5eb3d49b-4803-457f-91b8-1d6e749e0ef1
   replicas: 1
   service:
     endpointType: https
   designerFlowsOperationMode: disabled
   adminServerSecure: false
   tracing:
-    enabled: false
+    enabled: true
     namespace: od
   logFormat: basic
-  configurations: ["mqpolicy", "key.jks", "kafkapolicy", "httpsconf", "scramparms", "es-cert-ace.jks"]
+  configurations: ["mqpolicy", "key.jks", "httpsconf", "scramparms"]
