@@ -19,7 +19,7 @@ spec:
     name: ibm-entitlement-key
   license:
     accept: true
-    license: L-KSBM-CJ2KWU
+    license: L-APEH-CCHL5W
     use: CloudPakForIntegrationNonProduction
   useCommonServices: true
   enableMetrics: true
