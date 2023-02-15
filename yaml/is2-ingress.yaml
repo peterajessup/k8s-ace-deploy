@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ivtis-ingress 
+  namespace: ace 
+  annotations:
+    kubernetes.io/ingress.class: "public-iks-k8s-nginx"
+    nginx.ingress.kubernetes.io/backend-protocol: HTTPS
+spec:
+  tls:
+    - hosts:
+      - ace-ivtis.upstream-1-25-6-643d6b687ab93581d24420becac24aae-0000.au-syd.containers.appdomain.cloud
+  rules:
+    - host: ace-ivtis.upstream-1-25-6-643d6b687ab93581d24420becac24aae-0000.au-syd.containers.appdomain.cloud
+      http:
+        paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: ivtis-is
+              port:
+                number: 7843
