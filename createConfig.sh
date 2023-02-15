@@ -11,5 +11,5 @@ echo "spec:" >> oc.dat
 echo "" >> oc.dat
 echo "  type: ${crtype}" >> oc.dat
 echo "---" >> oc.dat 
-kubectl apply -f ./oc.dat -n ace
+/var/jenkins_home/kubectl apply -f ./oc.dat -n ace
 
