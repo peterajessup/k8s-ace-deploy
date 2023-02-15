@@ -23,7 +23,7 @@ spec:
     use: AppConnectEnterpriseProduction
   useCommonServices: false
   enableMetrics: false
-  barURL: https://db-ace-dash-dash:3443/v1/directories/ivtnk?5eb3d49b-4803-457f-91b8-1d6e749e0ef1
+  barURL: https://db-prod-dash:3443/v1/directories/Backend?c77e14fb-d93d-48c0-a950-16f3cfe8920b
   replicas: 1
   service:
     endpointType: https
