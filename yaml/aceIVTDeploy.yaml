@@ -1,7 +1,7 @@
 apiVersion: appconnect.ibm.com/v1beta1
 kind: IntegrationServer
 metadata:
-  name: is2
+  name: ivtis
   namespace: ace
 spec:
   pod:
@@ -14,23 +14,20 @@ spec:
           requests:
             cpu: '0.5'
             memory: 2Gi
-  version: 12.0.5.0-r1-lts
+  version: 12.0.7.0-r1
   imagePullSecrets:
     name: ibm-entitlement-key
   license:
     accept: true
-    license: L-APEH-CCHL5W
-    use: CloudPakForIntegrationNonProduction
-  useCommonServices: true
-  enableMetrics: true
+    license: L-APEH-CJUCNR
+    use: AppConnectEnterpriseProduction
+  useCommonServices: false
+  enableMetrics: false
   barURL: https://db-ace-dash-dash:3443/v1/directories/ivtnk?5eb3d49b-4803-457f-91b8-1d6e749e0ef1
   replicas: 1
   service:
     endpointType: https
   designerFlowsOperationMode: disabled
   adminServerSecure: false
-  tracing:
-    enabled: true
-    namespace: od
   logFormat: basic
-  configurations: ["mqpolicy", "key.jks", "httpsconf", "scramparms"]
+  configurations: [ "key.jks", "httpsconf"]
