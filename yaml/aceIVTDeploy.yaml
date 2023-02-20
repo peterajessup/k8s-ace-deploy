@@ -6,11 +6,6 @@ metadata:
 spec:
   pod:
     containers:
-      env:
-        - name: MQSI_OVERRIDE_HOSTNAME
-          value: "ace-ivtis.upstream-1-25-6-643d6b687ab93581d24420becac24aae-0000.au-syd.containers.appdomain.cloud"
-        - name: MQSI_OVERRIDE_HTTPS_PORT
-          value: "443"
       runtime:
         resources:
           limits:
