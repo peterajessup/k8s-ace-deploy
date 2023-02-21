@@ -6,7 +6,7 @@ metadata:
 spec:
   env:
     - name: MQSI_OVERRIDE_HOSTNAME
-      value: "ivtis-is.ace.svc -n ace"
+      value: "ivtis-is.ace.svc"
   pod:
     containers:
       runtime:
